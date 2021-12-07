@@ -37,4 +37,4 @@ jobs:
           with:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
             heroku_app_name: "simple-ci-cd-app"
-            heroku_email: "bsse1029@iit.du.ac.bd"
+            heroku_email: "micah@afitnerd.com"
