@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const port = process.env.port || 8000;
+const port = process.env.port || 3000;
 app.get('/add', function (req, res) {
     let result = Number(req.query.num1)+Number(req.query.num2);
     res.write(result.toString());
@@ -8,8 +8,8 @@ app.get('/add', function (req, res) {
 })
 
 app.listen(port,function(error){
-    //if(error) console.log("An error occured");
-    //else console.log("Running server on port 3000");
+    if(error) console.log("An error occured");
+    else console.log("Running server on port 3000");
 });
 module.exports = app
 /*
