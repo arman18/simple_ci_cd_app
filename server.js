@@ -1,16 +1,15 @@
 const express = require('express')
 const app = express();
-
+const port = process.env.port || 8000;
 app.get('/add', function (req, res) {
     let result = Number(req.query.num1)+Number(req.query.num2);
-    console.log(result);
     res.write(result.toString());
     res.end();
 })
 
-app.listen(3000,function(error){
-    if(error) console.log("An error occured");
-    else console.log("Running server on port 3000");
+app.listen(port,function(error){
+    //if(error) console.log("An error occured");
+    //else console.log("Running server on port 3000");
 });
 module.exports = app
 /*
@@ -43,7 +42,11 @@ Set up CI(GitHub Actions):
     4. nevigate action page again then will see that test is executing.
 Set up CD(heroku):
     1. register heroku
-    2. 
+    2. paste code
+    3. create app
+    4. git pull
+    5. add 
+
 
 
 */
