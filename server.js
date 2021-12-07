@@ -31,8 +31,19 @@ Add testing:
     2. create test/test.js and add content
     3. modify package.json test script
     4. run: npm test
-Set up CI/CD in Node.js
+push to github
     1. create .gitignore and add node_modules folder name inside
-    2. create github repository with name simple_ci_cd
-    3. 
+    2. create github repository with name simple_ci_cd without readme
+    3. push all to github
+
+Set up CI(GitHub Actions):
+    1. nevigate github repository
+    2. click actions > new workflow
+    3. choose a workflow suggested by github and commit it
+    4. nevigate action page again then will see that test is executing.
+Set up CD(heroku):
+    1. register heroku
+    2. 
+
+
 */
